@@ -145,19 +145,19 @@ main {
     position: relative;
 }
 
-/* Заголовок "ЛОТЫ" - ТОЧНЫЕ КООРДИНАТЫ ИЗ ФОТО: X 40 */
+/* Заголовок "Лоты" */
 .lots__title {
     font-size: 40px;
     font-weight: 700;
-    margin-left: 64px; /* ОТСТУП СЛЕВА 40px ИЗ ФОТО */
+    margin-left: 64px; 
 }
 
-/* Сетка лотов - меняем на позиционирование */
+/* Сетка лотов */
 .lots__grid {
     height: 623px;
 }
 
-/* Общие стили для лотов - абсолютное позиционирование */
+/* Общие стили для лотов */
 .lot {
     position: absolute;
     width: 334px;
@@ -170,7 +170,7 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(0.4); /* ЗДЕСЬ ДОБАВЛЕНО ЗАТЕМНЕНИЕ НА 60% */
+    filter: brightness(0.4);
 }
 
 .lot__text-container {
@@ -202,9 +202,9 @@ main {
     text-align: left;
 }
 
-/* Первый лот (слева) - смещаем вправо, чтобы не касался черного фона */
+/* Первый лот */
 .lot--first {
-    left: 24px; /* Смещаем от левого края, вместо 0 */
+    left: 24px;
     top: 74px;
 }
 
@@ -231,9 +231,9 @@ main {
     height: 144px;
 }
 
-/* Второй лот (по центру) - равномерное распределение */
+/* Второй лот (по центру) */
 .lot--center {
-    left: 383px; /* 24px + 334px + 25px = 383px (равномерное распределение) */
+    left: 383px;
     top: 74px;
 }
 
@@ -262,7 +262,7 @@ main {
 
 /* Третий лот (справа) - равномерное распределение */
 .lot--right {
-    left: 742px; /* 383px + 334px + 25px = 742px (равномерное распределение) */
+    left: 742px;
     top: 74px;
 }
 
@@ -289,7 +289,7 @@ main {
     height: 264px;
 }
 
-/* Кнопка "посмотреть больше" - ИСПРАВЛЕНО: обычный поток */
+/* Кнопка "посмотреть больше" */
 .lots__more-link {
     display: inline-block;
     margin: 28px 0 0 64px;
@@ -351,11 +351,11 @@ main {
 .footer {
     padding: 80px 0 40px;
     background: #FFFFFF;
-    width: 1100px; /* Ограничиваем ширину */
-    margin: 0 auto; /* Центрируем */
+    width: 1100px; 
+    margin: 0 auto;
     position: relative;
     min-height: 200px;
-    border-top: none; /* УБИРАЕМ ЛИНИЮ */
+    border-top: none; 
 }
 
 /* Контакты в футере */
@@ -390,7 +390,7 @@ main {
     text-decoration: none;
 }
 
-/* Навигация в футере - каждая ссылка отдельно */
+/* Навигация в футере */
 .footer__nav-center {
     position: absolute;
     top: 0;
@@ -398,7 +398,7 @@ main {
     height: 64px;
 }
 
-/* "главная" - координаты из первого фото: X 819.7 */
+/* "главная" */
 .footer__nav-item--main {
     position: absolute;
     left: 513.7px;
@@ -412,7 +412,7 @@ main {
     height: 22px;
 }
 
-/* "посмотреть лоты" - X:468.6, Y:22, W:163.9, H:22 */
+/* "посмотреть лоты" */
 .footer__nav-item--lots {
     position: absolute;
     left: 468.6px;
@@ -448,21 +448,21 @@ main {
     text-align: center;
 }
 
-/* Соцсети с иконками из Figma - точное позиционирование */
+/* Соцсети с иконками */
 .footer__social-icons {
     position: absolute;
-    left: 810px; /* ТОЧНАЯ ПОЗИЦИЯ ИЗ ФОТО */
+    left: 810px; 
     top: 0;
     display: flex;
     gap: 48px; /* Расстояние между иконками 48px */
     align-items: center;
-    width: 240px; /* W 240 из фото */
-    height: 48px; /* H 48 из фото */
+    width: 240px;
+    height: 48px;
 }
 
 .footer__social-icon {
     display: block;
-    width: 48px; /* Размер иконок */
+    width: 48px; 
     height: 48px;
 }
 
