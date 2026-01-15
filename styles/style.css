@@ -1,3 +1,4 @@
+/* ===== HEADER ===== */
 .header {
     width: 1100px;
     background: #FFFFFF;
@@ -53,6 +54,7 @@ main {
     background: #fff;
 }
 
+/* ===== COVER С ФОНОМ И ТЕКСТОМ ===== */
 .overlay {
   position: absolute;
   top: 0;
@@ -136,22 +138,26 @@ main {
   border: 1px solid currentColor;
 }
 
+/* ===== LOTS ===== */
 .lots {
     background: #FFFFFF;
     margin-top: 180px;
     position: relative;
 }
 
+/* Заголовок "ЛОТЫ" - ТОЧНЫЕ КООРДИНАТЫ ИЗ ФОТО: X 40 */
 .lots__title {
     font-size: 40px;
     font-weight: 700;
-    margin-left: 64px; 
+    margin-left: 64px; /* ОТСТУП СЛЕВА 40px ИЗ ФОТО */
 }
 
+/* Сетка лотов - меняем на позиционирование */
 .lots__grid {
     height: 623px;
 }
 
+/* Общие стили для лотов - абсолютное позиционирование */
 .lot {
     position: absolute;
     width: 334px;
@@ -159,11 +165,12 @@ main {
     margin-top: -2px;
 }
 
+/* ЗАТЕМНЕНИЕ КАРТИНОК В РАЗДЕЛЕ ЛОТЫ */
 .lot__photo {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(0.4); 
+    filter: brightness(0.4); /* ЗДЕСЬ ДОБАВЛЕНО ЗАТЕМНЕНИЕ НА 60% */
 }
 
 .lot__text-container {
@@ -175,6 +182,7 @@ main {
     pointer-events: none;
 }
 
+/* Подчеркнутые заголовки */
 .lot__title--underlined {
     text-decoration: underline;
     text-underline-offset: 5px;
@@ -194,11 +202,13 @@ main {
     text-align: left;
 }
 
+/* Первый лот (слева) - смещаем вправо, чтобы не касался черного фона */
 .lot--first {
-    left: 24px; 
+    left: 24px; /* Смещаем от левого края, вместо 0 */
     top: 74px;
 }
 
+/* Текст для первого лота (слева) */
 .lot__title--first {
     font-size: 22px;
     font-weight: 700;
@@ -221,11 +231,13 @@ main {
     height: 144px;
 }
 
+/* Второй лот (по центру) - равномерное распределение */
 .lot--center {
-    left: 383px; 
+    left: 383px; /* 24px + 334px + 25px = 383px (равномерное распределение) */
     top: 74px;
 }
 
+/* Текст для второго лота (по центру) */
 .lot__title--center {
     font-size: 22px;
     font-weight: 700;
@@ -248,11 +260,13 @@ main {
     height: 360px;
 }
 
+/* Третий лот (справа) - равномерное распределение */
 .lot--right {
-    left: 742px;
+    left: 742px; /* 383px + 334px + 25px = 742px (равномерное распределение) */
     top: 74px;
 }
 
+/* Текст для третьего лота (справа) */
 .lot__title--right {
     font-size: 22px;
     font-weight: 700;
@@ -275,6 +289,7 @@ main {
     height: 264px;
 }
 
+/* Кнопка "посмотреть больше" - ИСПРАВЛЕНО: обычный поток */
 .lots__more-link {
     display: inline-block;
     margin: 28px 0 0 64px;
@@ -288,6 +303,7 @@ main {
     border-bottom-color: transparent;
 }
 
+/* ===== ABOUT SECTION ===== */
 .about {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -331,16 +347,18 @@ main {
   line-height: 1.2;
 }
 
+/* ===== FOOTER ===== */
 .footer {
     padding: 80px 0 40px;
     background: #FFFFFF;
-    width: 1100px;
-    margin: 0 auto; 
+    width: 1100px; /* Ограничиваем ширину */
+    margin: 0 auto; /* Центрируем */
     position: relative;
     min-height: 200px;
-    border-top: none; 
+    border-top: none; /* УБИРАЕМ ЛИНИЮ */
 }
 
+/* Контакты в футере */
 .footer__contacts {
     position: absolute;
     left: 50px;
@@ -372,6 +390,7 @@ main {
     text-decoration: none;
 }
 
+/* Навигация в футере - каждая ссылка отдельно */
 .footer__nav-center {
     position: absolute;
     top: 0;
@@ -379,6 +398,7 @@ main {
     height: 64px;
 }
 
+/* "главная" - координаты из первого фото: X 819.7 */
 .footer__nav-item--main {
     position: absolute;
     left: 513.7px;
@@ -392,6 +412,7 @@ main {
     height: 22px;
 }
 
+/* "посмотреть лоты" - X:468.6, Y:22, W:163.9, H:22 */
 .footer__nav-item--lots {
     position: absolute;
     left: 468.6px;
@@ -409,6 +430,7 @@ main {
     text-align: center;
 }
 
+/* "об аукционе" - X:490.6, Y:43, W:118.8, H:22 */
 .footer__nav-item--about {
     position: absolute;
     left: 490.6px;
@@ -426,20 +448,21 @@ main {
     text-align: center;
 }
 
+/* Соцсети с иконками из Figma - точное позиционирование */
 .footer__social-icons {
     position: absolute;
-    left: 810px; 
+    left: 810px; /* ТОЧНАЯ ПОЗИЦИЯ ИЗ ФОТО */
     top: 0;
     display: flex;
-    gap: 48px; 
+    gap: 48px; /* Расстояние между иконками 48px */
     align-items: center;
-    width: 240px; 
-    height: 48px; 
+    width: 240px; /* W 240 из фото */
+    height: 48px; /* H 48 из фото */
 }
 
 .footer__social-icon {
     display: block;
-    width: 48px; 
+    width: 48px; /* Размер иконок */
     height: 48px;
 }
 
